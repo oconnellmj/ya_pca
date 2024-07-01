@@ -2,7 +2,7 @@ from joblib import Parallel, delayed
 from sklearn.utils import check_random_state
 import numpy as np
 
-from inspect import getargspec
+from inspect import getfullargspec
 
 
 def sample_random_seeds(n_seeds, random_state=None):
@@ -47,7 +47,7 @@ def sample_parallel(fun, kws={}, n_samples=100,
         Each entry of samples is the output of one call to
         fun(*args, **kwargs)
     """
-    if 'random_state' not in getargspec(fun).args:
+    if 'random_state' not in getfullargspec(fun).args:
         raise ValueError("func must take 'random_state' as an argument")
 
     seeds = sample_random_seeds(n_samples, random_state)
