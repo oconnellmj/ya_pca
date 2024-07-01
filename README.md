@@ -12,7 +12,7 @@ pip install pca (coming soon!)
 -->
 
 ```
-git clone https://github.com/idc9/pca.git
+git clone https://github.com/oconnellmj/pca.git
 python setup.py install
 ```
 
