@@ -5,16 +5,16 @@ A sklearn compatible python package for principal components analysis that inclu
 
 ## Installation
 
-<!--
 ```
-pip install pca (coming soon!)
+pip install git+https://github.com/oconnellmj/ya_pca
 ```
--->
 
+<!--
 ```
 git clone https://github.com/oconnellmj/pca.git
 python setup.py install
 ```
+-->
 
 ## Example
 
